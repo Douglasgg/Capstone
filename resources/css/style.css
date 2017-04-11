@@ -11,6 +11,12 @@ body {
   color: black;
 }
 
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 
 /* Header */
 
@@ -34,6 +40,10 @@ header {
   border: none;
 }
 
+.company {
+  display: inline;
+}
+
 
 #altfont {
   font-family: sans-serif;
@@ -52,16 +62,34 @@ header nav {
 
 .logo span {
   margin-left: 12px;
+  margin-right: 0;
 }
 
 nav a {
   padding: 1rem .5rem;
   font-family: sans-serif;
+  transition: background-color .5s linear .5s;
+  border-radius: 15px;
 }
 
+nav a:hover {
+  background-color: lightblue;
+  }
 
-@media only screen and (max-width: 480px) {
 
+@media only screen and (max-width: 580px) {
+  .notmobile {
+    display: none;
+  }
+  .company {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 581px) {
+ .mobile {
+    display: none;
+  }
 }
 
 /* content */
@@ -70,6 +98,7 @@ div #learn {
   background-color: lightgray;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   overflow: hidden;
   position: relative;
@@ -105,8 +134,6 @@ div .content {
   margin-top: 1rem;
 }
 
-
-
 #learn h4 {
   font-size: 1rem;
   line-height: 1.2;
@@ -114,7 +141,7 @@ div .content {
   color: #4a4a4a;
 }
 
-.content p {
+#learn .content p {
   background-color: black;
   color: white;
   text-align: center;
@@ -122,6 +149,72 @@ div .content {
   padding: 1rem .5rem;
 }
 
+div #practive {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  padding-bottom: 32px;
+}
+
+.container-vertical .image-container {
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  height: 400px;
+}
+
+.container-options {
+width: 35%;
+flex-direction: column;
+justify-content: flex-start;
+margin: 32px 24px;
+height: 600px;
+flex-wrap: nowrap;
+}
+
+.image-container-small {
+  display: inline-block;
+  overflow: hidden;
+  width: 130px;
+  height: 140px;
+  height: auto;
+  margin-top: .5rem;
+}
+.image-container-small img {
+  height: auto;
+  max-width: 100%;
+  margin: 5px 5px 5px 5px;
+  display: block;
+}
+
+.content-below {
+  width: 90%;
+  height: auto;
+  margin-left: 1.5rem;
+}
+
+.content-below h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin: 32px auto;
+}
+
+.content-below p {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #4a4a4a;
+  margin: 32px auto;
+}
+
+.container-vertical {
+  width: 60%;
+}
+
+.selection {
+  width: 100%;
+}
 
 /*  Footer */
 
