@@ -116,6 +116,8 @@ nav a:hover {
 
 /* content */
 
+/* Learn section */
+
 div #learn {
   background-color: lightgray;
   width: 100%;
@@ -171,12 +173,35 @@ div .content {
   padding: 1rem .5rem;
 }
 
-div #practive {
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  padding-bottom: 32px;
+@media only screen and (max-width: 580px) {
+  div #learn {
+    background-color: darkgray;
+    padding-bottom: 0;
+  }
+  #learn .image-container {
+    display: none;
+  }
+  #learn .content {
+    margin-top: 180px;
+    padding-top: 32px;
+    background-color: lightgray;
+    width: 100%;
+    padding-left: 16px;
+    padding-bottom: 2rem;
+  }
+
+  #learn .content p {
+    margin-right: 1rem;
+    background-color: darkgray;
+  }
+
+  #learn h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 }
+
+/* Practice Section */
 
 .container-vertical .image-container {
   display: inline-block;
@@ -187,7 +212,6 @@ div #practive {
 }
 
 .container-options {
-width: 35%;
 flex-direction: column;
 justify-content: flex-start;
 margin: 32px 24px;
@@ -255,6 +279,58 @@ flex-wrap: nowrap;
   background-color: lightgray;
 }
 
+@media only screen and (max-width: 580px) {
+
+  #practice .container-vertical {
+    display: none;
+  }
+
+  #practice .image-container-small.notmobile {
+    display: none;
+  }
+
+  #practice .image-container-small.mobile {
+    width: 100%;
+    margin: 1rem 1rem;
+  }
+
+  #practice .selection {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .graybg {
+    background-color: white;
+  }
+
+  #practice .content {
+      margin-left: 1rem;
+  }
+
+  #practice .content h2 {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+  }
+    #practice .content h4 {
+    font-size: .75rem;
+    margin-left: 1rem;
+  }
+
+  #practice .content a {
+    font-size: .70rem;
+    margin-left: 1rem;
+    color: #adbde6;
+  }
+  #practice .container-options {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 581px) {
+  #practice .image-container-small.mobile {
+    display: none;
+  }
+}
 /* Start Section */
 
 #start {
@@ -275,7 +351,7 @@ flex-wrap: nowrap;
 #learning-tracks {
   margin: 32px 32px;
   height: 90%;
-  width: 80%;
+  width: 85%;
   max-width: 1200px;
   align-items: flex-start;
   margin-right: 32px;
@@ -330,12 +406,13 @@ flex-wrap: nowrap;
 
 footer {
   height: 3rem;
-  font-size: .5rem;
+  font-size: .75rem;
   display: flex;
   width: 100%
   font-family: Georgia;
   padding-top: 1rem;
   justify-content: space-between;
+  margin: .5rem;
 }
 
   footer nav {
