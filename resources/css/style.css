@@ -99,7 +99,7 @@ nav a:hover {
   }
 
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 480px) {
   .notmobile {
     display: none;
   }
@@ -108,7 +108,7 @@ nav a:hover {
   }
 }
 
-@media only screen and (min-width: 581px) {
+@media only screen and (min-width: 481px) {
  .mobile {
     display: none;
   }
@@ -173,7 +173,7 @@ div .content {
   padding: 1rem .5rem;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 480px) {
   div #learn {
     background-color: darkgray;
     padding-bottom: 0;
@@ -279,7 +279,7 @@ flex-wrap: nowrap;
   background-color: lightgray;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 480px) {
 
   #practice .container-vertical {
     display: none;
@@ -326,7 +326,7 @@ flex-wrap: nowrap;
   }
 }
 
-@media only screen and (min-width: 581px) {
+@media only screen and (min-width: 481px) {
   #practice .image-container-small.mobile {
     display: none;
   }
@@ -389,14 +389,14 @@ flex-wrap: nowrap;
   }
 
 /* not mobile */
-@media only screen and (min-width: 581px) {
+@media only screen and (min-width: 481px) {
   #learning-tracks .mobile {
     display: none;
   }
 }
 
 /* mobile */
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 480px) {
   #start {
     height: auto;
     background-color: white;
@@ -435,12 +435,12 @@ flex-wrap: nowrap;
   }
 
   /* not mobile */
-  @media only screen and (min-width: 581px) {
+  @media only screen and (min-width: 481px) {
 
   }
 
   /* mobile */
-  @media only screen and (max-width: 580px) {
+  @media only screen and (max-width: 480px) {
     #exhibit .content-below {
       display: none;
     }
